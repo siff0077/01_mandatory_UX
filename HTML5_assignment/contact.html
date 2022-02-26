@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1>Restaurant KEA</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <address>
+                <p><em>
+                    Guldbergsgade 29<br>
+                    2200 Copenhagen<br><br>
+                    Phone no.: <a href="tel:+4520825370">20 82 53 70</a><br><br>
+                    E-mail: <a href="email:info@restaurantkea.dk">info@restaurantkea.dk</a>
+                </em></p>
+            </address>
+
+            <img src="images/map.jpg" alt="Map to KEA Restaurant's location"/>
+
+        </section>
+
+        <section>
+            <form action="mailto:info@restaurantkea.dk" name="Contact_form">
+                <fieldset>
+                    <legend>Contact form</legend>
+                    <label for="fullname">
+                        <span>Full name</span>
+                    </label>
+                    <input
+                    type="text"
+                    name="fullname"
+                    id="fullname"
+                    placeholder="Please enter your full name"
+                    pattern="^(\w\w+)\s(\w+)$"
+                    required/>
+                    <label for="phonenumber">
+                        <abbr title="Phone number">Phone no.</abbr>
+                    </label>
+                        <input
+                        type="tel"
+                        name="phonenumber"
+                        id="phonenumber"
+                        placeholder="Please enter your phone number"
+                        maxlength="8"
+                        pattern="[0-9]{8}"
+                        required/>
+                    <label for="email">
+                        <span>E-mail</span>
+                    </label>
+                        <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Please enter your e-mail"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        required/>
+                    <label for="number_of_participants">
+                        <span>Persons</span>
+                    </label>
+                        <input
+                        type="number"
+                        name="number_of_participants"
+                        id="number_of_participants"
+                        placeholder="Please enter the amount of persons"
+                        min="1"
+                        max="15"
+                        value="2"
+                        autocomplete="off"
+                        required/>
+                    <label for="date_and_time">
+                        <span>Date and time</span>
+                    </label>
+                        <input type="datetime-local" name="date_and_time" id="date_and_time" required />
+                    <label for="comment">
+                        <span>Further information</span>
+                    </label>
+                        <textarea name="comment" id="comment" cols="30">
+                        </textarea>
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <small>@2022 KEA Development</small>
+    </footer>
+
+</body>
+</html>
