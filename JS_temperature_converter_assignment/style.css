@@ -12,17 +12,39 @@ body {
 }
 
 header, footer {
-    background-color: #006d77;
-    color: white;
+    background-color: #D2D68D;
+    color: #68534D;
     padding: 15px ;
 }
 
 main {
+    width: 30%;
     padding: 0% 2%;
+
 }
 
 footer {
     margin-top: 10px;
     position: fixed;
     bottom: 0;
+}
+
+#values_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+#convert_button {
+    width: 95px;
+    padding: 5px;
+    color: #0d2568;
+    background-color: #D9F9A5;
+    margin-top: 15px;
+}
+
+#result {
+    margin-top: 10px;
+    background-color: #D9F9A5;
+    color: #68534D;
 }

@@ -6,15 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./style.css">
-    <title>Music CDs</title>
+    <title>Temperature converter</title>
 </head>
 <body>
 
     <header>
-        
+        <h1>Temperature converter</h1>
     </header>
 
-    <main></main>
+    <main>
+        <section>
+            <form>
+                <div id="convertion_value_div">
+                    <label for="convertion_value">
+                        <span>Convert:</span>
+                    </label>
+                    <input type="number"
+                    name="convertion_value"
+                    id="convertion_value"
+                    value="0" 
+                    step="0.01"
+                    required/>
+                </div>
+                <div id="values_div">
+                    <div>
+                        <label for="from_temperature_value">From</label>
+                        <select name="from_temperature_value" id="from_temperature_value" size="3">
+                            <option value="celsius" selected>Celsius</option>
+                            <option value="fahrenheit">Fahrenheit</option>
+                            <option value="kelvin">Kelvin</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="to_temperature_value">To</label>
+                        <select name="to_temperature_value" id="to_temperature_value" size="3">
+                            <option value="celsius">Celsius</option>
+                            <option value="fahrenheit" selected>Fahrenheit</option>
+                            <option value="kelvin">Kelvin</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" value="Convert" id="convert_button">
+            </form>
+        </section>
+
+        <section id="result">
+            <p><span id="convert_from_value">0</span> = <strong><span id="convert_to_value">0</span></strong></p>
+        </section>
+    </main>
 
     <footer>
         <small>@ 2022 Siff Leva Jensen</small>
