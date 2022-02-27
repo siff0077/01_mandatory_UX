@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+header, footer {
+    background-color: #9395D3;
+    color: white;
+    padding: 15px ;
+}
+
+main {
+    padding: 0% 2%;
+}
+
+footer {
+    margin-top: 10px;
+    position: fixed;
+    bottom: 0;
+}
+
+section {
+    padding: 5px;
+}
+
+#calculate_button {
+    width: 10%;
+    padding: 5px;
+    color: #0d2568;
+    background-color: #B3B7EE;
+    margin-top: 5px;
+}
+
+#results {
+    margin-top: 10px;
+    background-color: #B3B7EE;
+    color: #000807;
+}

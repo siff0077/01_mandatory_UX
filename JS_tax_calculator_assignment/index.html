@@ -4,15 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music CDs</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Tax calculator</title>
 </head>
 <body>
 
-    <header></header>
+    <header>
+        <h1>Tax calculator</h1>
+    </header>
 
-    <main></main>
+    <main>
+        <section>
+            <form>
+                <div id="monetary_amount_div">
+                    <label for="monetary_amount">
+                        <span>Monetary amount:</span>
+                    </label>
+                    <input type="number"
+                    name="monetary_amount"
+                    id="monetary_amount"
+                    value="0"
+                    min="0" 
+                    step="0.01"
+                    required/>
+                </div>
+                <div id="tax_percentage_div">
+                    <label for="tax_percentage">
+                        <span>Tax percentage:</span>
+                    </label>
+                    <input
+                    type="number"
+                    name="tax_percentage"
+                    id="tax_percentage"
+                    value="0"
+                    min="0" 
+                    max="100" 
+                    step="0.01"
+                    required/>
+                </div>
+                <input type="submit" value="Calculate" id="calculate_button">
+            </form>
+        </section>
 
-    <footer>@ 2022 Siff Leva Jensen</footer>
+        <section id="results">
+            <strong>Tax amount: </strong><span id="final_tax_amount">0</span>
+            <br>
+            <strong>Final amount: </strong><span id="final_amount">0</span>
+        </section>
+    </main>
+
+    <footer>
+        <small>@ 2022 Siff Leva Jensen</small>
+    </footer>
     
 </body>
 </html>
