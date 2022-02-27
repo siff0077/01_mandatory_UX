@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+header, footer {
+    background-color: #006d77;
+    color: white;
+    padding: 15px ;
+}
+
+main {
+    padding: 0% 2%;
+}
+
+footer {
+    margin-top: 10px;
+    position: fixed;
+    bottom: 0;
+}
+
+div {
+    padding: 5px 0;
+}
+
+#year_div {
+    display: flex;
+    flex-direction: row;
+}
+
+#year_div input {
+    width: 50%;
+}
+
+#add_button {
+    width: 10%;
+    padding: 5px;
+    color: blue;
+    background-color: #83C5BE;
+}
+
+form, table {
+    margin-top: 5px;
+}
+
+table tr {
+    display: grid;
+    grid-template-columns: 4fr 4fr 3fr 1fr;
+}
+
+table tr:nth-of-type(even) {
+    background-color: #EDF6F9;
+}
+
+table tr th {
+    border: solid white 2px;
+    background-color: #006d77;
+    color: white;
+    padding: 5px;
+}
+table tr td {
+    border-right: solid #006d77 2px;
+    padding: 5px;
+    text-align: center;
+    font-weight: 300;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+table tr td:last-of-type {
+    border-right: none;
+}
+
+
+@media only screen and (min-width: 600px) {
+    main {
+        padding: 0% 10%;
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
+}
+

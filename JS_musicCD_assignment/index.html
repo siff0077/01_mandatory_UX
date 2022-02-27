@@ -18,37 +18,43 @@
     <main>
         <section>
             <form id="cd_information_form">
-                <label for="author">
-                    <span>Author</span>
-                </label>
-                <input
-                type="text"
-                name="author"
-                id="author"
-                placeholder="Enter the author here"
-                required/>
-                <label for="title">
-                    <span>Title</span>
-                </label>
-                <input
-                type="text"
-                name="title"
-                id="title"
-                placeholder="Enter the title here"
-                required/>
-                <label for="year">
-                    <span>Year</span>
-                </label>
-                <input
-                type="number"
-                name="year"
-                id="year"
-                placeholder="Select the year here"
-                min="0" 
-                maxlength="4"
-                value="2022" 
-                required/>
-                <input type="submit" value="Add" id="add_button">
+                <div id="author_div">
+                    <label for="author">
+                        <span>Author</span>
+                    </label>
+                    <input
+                    type="text"
+                    name="author"
+                    id="author"
+                    placeholder="Enter the author here"
+                    required/>
+                </div>
+                <div id="title_div">
+                    <label for="title">
+                        <span>Title</span>
+                    </label>
+                    <input
+                    type="text"
+                    name="title"
+                    id="title"
+                    placeholder="Enter the title here"
+                    required/>
+                </div>
+                <div id="year_div">
+                    <label for="year" id="form_year">
+                        <span>Year</span>
+                    </label>
+                    <input
+                    type="number"
+                    name="year"
+                    id="year"
+                    placeholder="Select the year here"
+                    min="0" 
+                    maxlength="4"
+                    value="2022" 
+                    required/>
+                </div>
+                    <input type="submit" value="Add" id="add_button">
             </form>
         </section>
         <section>
@@ -77,7 +83,9 @@
         </tr>
     </template>
 
-    <footer>@ 2022 Siff Leva Jensen</footer>
+    <footer>
+        <small>@ 2022 Siff Leva Jensen</small>
+        </footer>
     
 </body>
 </html>
