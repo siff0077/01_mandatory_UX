@@ -39,12 +39,22 @@ footer {
     width: 95px;
     padding: 5px;
     color: #0d2568;
-    background-color: #D9F9A5;
+    background-color: #D2D68D;
     margin-top: 15px;
 }
 
 #result {
     margin-top: 10px;
-    background-color: #D9F9A5;
+    background-color: #D2D68D;
     color: #68534D;
+}
+
+#error_field {
+    margin-top: 15px;
+    color: #68534D;
+    font-style: italic;
+}
+
+.hide {
+    display: none;
 }
