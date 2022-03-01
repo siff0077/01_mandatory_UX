@@ -1,5 +1,6 @@
 "use strict"
 
+    // CONVERTS THE NUMBERS
 const convert = function convertTemperature(value, fromValue, toValue) {
     switch (fromValue){
         case "fahrenheit":
@@ -16,16 +17,19 @@ const convert = function convertTemperature(value, fromValue, toValue) {
     }
 }
 
+    // GETS THE SHORTENED VALUE
 function getShortenedValueName(valueName) {
     return valueName === "kelvin" ? "K" : valueName === "celsius" ? "°C" : "F";
 }
 
+    // SHOWS THE ERROR FIELD, IF AN ERROR OCCURES
 function showErrorField(text, errorField) {
     errorField.classList = '';
     errorField.textContent = text;
     document.querySelector("#result").classList = 'hide';
 }
 
+    // SHOWS THE CONVERTED RESULT
 function showConvertionResult(value=0, fromValue=none, toValue=none, result=0, errorField) {
     
     errorField.classList = 'hide';
@@ -37,18 +41,20 @@ function showConvertionResult(value=0, fromValue=none, toValue=none, result=0, e
 
 }
 
+
 function formSubmission(event) {
     event.preventDefault();
 
-    
+    // GETS THE VALUE THAT SHOULD BE CONVERTED
     const value = event.target.querySelector("#convertion_value").value;
     
+    // GETS THE SPECIFIC VALUE TO CONVERT FROM AND TO (EG. CELSIUS TO KELVIN)
     const fromValue = event.target.querySelector("#from_temperature_value").value;
     const toValue = event.target.querySelector("#to_temperature_value").value;
 
     const errorField = document.querySelector("#error_field");
 
-    
+    // IF-STATEMENT THAT CONTROLS THE ERROR
     if (fromValue === toValue) {
         showErrorField("Not possible to convert to similar values, please choose 2 different ones", errorField);
     } else {
